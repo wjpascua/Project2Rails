@@ -1,0 +1,9 @@
+%table{:border => "2"}
+  %td='first name'
+  %td='last name'
+  %td='major'
+  - @students.each do |s|
+    %tr
+      %td=s.first_name
+      %td=s.last_name
+      %td=s.major
